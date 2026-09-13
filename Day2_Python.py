@@ -126,7 +126,7 @@ print("Converting account balance ",account_balance_updated," and the type ",typ
 print("Is the user verified ",is_verified_updated," and the type ",type(is_verified_updated))
 
 #5
-last_login = False
+last_login = None
 
 #Task 2
 """
@@ -172,8 +172,9 @@ print(type(data))
 data = 100
 print(type(data)) #int
 data = "100"
-print(type(data)) #string
+print(type(data)) #string(str)
 data = 100.0
 print(type(data)) #float
 data = None
-print(type(data)) #None
+print(type(data)) #NoneType
+
