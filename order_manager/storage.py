@@ -23,7 +23,7 @@ def save_orders(orders):
         )
 def export_csv(orders):
     DATA_DIR.mkdir(exist_ok=True)
-    fieldname = [
+    fieldnames = [
         "order_id",
         "customer",
         "product",
@@ -31,6 +31,6 @@ def export_csv(orders):
         "price"
     ]
     with CSV_FILE.open("w",newline="",encoding="utf-8") as file:
-        writer = csv.DictWriter(file,fieldnames=fieldname)
+        writer = csv.DictWriter(file,fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(orders)
