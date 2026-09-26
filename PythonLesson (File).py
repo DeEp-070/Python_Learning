@@ -185,11 +185,11 @@
 
 import json
 
-user = {
-    "name": "Ajay",
-    "age": 21,
-    "skills": ["Python", "SQL", "FastAPI"]
-}
+# user = {
+#     "name": "Ajay",
+#     "age": 21,
+#     "skills": ["Python", "SQL", "FastAPI"]
+# }
 # json_data = json.dumps(user)  #python -> json
 # print(type(json_data)) #output <class str>
 #
